@@ -1,5 +1,5 @@
 # Requirements Report
-Script to get all the data of a project of ![C&L](http://transparencia.les.inf.puc-rio.br:8080)
+Script to get all the data of a project of [Cenários e Léxico](http://transparencia.les.inf.puc-rio.br:8080)
 and create a HTML with it.
 
 
@@ -14,7 +14,7 @@ the HTML of the report. The default works just fine. :)
 
 ## Installing and Running
 ### With docker - Only OSX and Linux (Easier if you don't know nothing about Ruby or Phantom JS)
-1. Install ![Docker](https://www.docker.com/)
+1. Install [Docker](https://www.docker.com/)
 2. Build docker image running `./prepare.sh`. (Do it every time you update the script)
 3. Run the script with `./generate.sh "PART OF PROJECT NAME"`
 
