@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="http://transparencia.les.inf.puc-rio.br:8080/cel/visao/css/smoothness/jquery-ui-1.8.13.custom.css">
+    <link rel="stylesheet" type="text/css" href="http://transparencia.les.inf.puc-rio.br:8080/cel/visao/css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://transparencia.les.inf.puc-rio.br:8080/cel/visao/css/estilo.css">
+  </head>
+  <body>
+  <h1>Integrantes o grupo</h1>
+  <table class="tableestilocenario" width="100%">
+    <tbody>
+    <% @team.each_with_index do |member, i| %>
+      <tr>
+        <th class="thprojeto"><span class="thtextocenario">Integrante <%=i+1%></span></th>
+        <td><span id="cmp_name_member" class="span_texto_normal"><%= member %></span></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+  
+  <h1>Projeto</h1>
+  <%= @project_table %>
+  
+  <h1>Cenários</h1>
+  <%= @scenario_tables.join("<br/><hr/><br/>\n") %>
+  
+  <h1>Simbolos do Léxico</h1>
+  <%= @lexico_tables.join("<br/><hr/><br/>\n") %>
+  </body>
+</html>

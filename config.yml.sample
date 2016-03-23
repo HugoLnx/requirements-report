@@ -1,0 +1,8 @@
+team:
+  - Deadpool
+  - Wolverine
+  - Zero Suit Samus
+  - Ghost
+credentials:
+  login: yourlogin
+  pass: yourpassword
